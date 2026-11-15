@@ -11,6 +11,10 @@ function draw() {
 
   let x1 = width / 2 + cos(ang*2) * 150;
   let y2 = height / 2 + sin(ang*2) * 150;
+ 
+  let x_luna = x + cos(ang*3) * 30;
+  let y_luna = y + sin(ang*3) * 30;
+
   
   fill(200, 200, 0);
   circle(width / 2, height / 2, 40);   // sol
@@ -21,4 +25,8 @@ function draw() {
   
    fill(200, 180, 255);
   circle(x1, y2, 15); 
+
+  fill(200, 0, 30);
+  circle(x_luna, y_luna, 10); 
+
 }
